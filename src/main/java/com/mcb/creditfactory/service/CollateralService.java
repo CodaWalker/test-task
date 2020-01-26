@@ -20,6 +20,7 @@ public class CollateralService {
             throw new IllegalArgumentException();
         }
 
+
         CarDto car = (CarDto) object;
         boolean approved = carService.approve(car);
         if (!approved) {
